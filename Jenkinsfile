@@ -39,13 +39,6 @@ pipeline {
 					)
 	            }
 	        }
-	         // Test Stages
-	        stage('Test') {
-	            steps {
-	                echo "Testing..the workflow..."
-	            }
-	        }
-	
 
 	         // Deploy Stages
 	        stage('Deploy to UAT') {
@@ -66,6 +59,21 @@ pipeline {
 	                
 	            }
 	        }
+	
+	         // Test Stages
+	        stage('Test') {
+	            steps {
+        		UiPathTest (
+		          testTarget: [$class: 'TestSetEntry', testSet: "NWLPOCTestSet01"],
+		          orchestratorAddress: "${UIPATH_ORCH_URL}",
+		          orchestratorTenant: "${UIPATH_ORCH_TENANT_NAME}",
+		          folderName: "${UIPATH_ORCH_FOLDER_NAME}",
+		          timeout: "10000",
+		          traceLoggingLevel: 'None',
+		          testResultsOutputPath: "result.xml",
+		          credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey')
+        )
+      }	        }
 	
 	         // Deploy to Production Step
 	        stage('Deploy to Production') {
