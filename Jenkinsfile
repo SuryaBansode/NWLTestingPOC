@@ -14,7 +14,7 @@ pipeline {
 		stages {
 	
 
-	        // Printing Basic Information
+	        // Printing Basic Information -
 	        stage('Preparing'){
 	            steps {
 	                echo "Jenkins Home ${env.JENKINS_HOME}"
