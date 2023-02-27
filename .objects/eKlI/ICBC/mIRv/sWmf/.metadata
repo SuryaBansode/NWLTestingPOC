@@ -1,0 +1,13 @@
+﻿{
+  "Id": "sWmffSiCN0i4guj8LO5o6A",
+  "Reference": "nV0ZN8R5dkWxcdm7JsKuMw/sWmffSiCN0i4guj8LO5o6A",
+  "ParentRef": "nV0ZN8R5dkWxcdm7JsKuMw/mIRvB-7IqEaHy2GCYogoQA",
+  "Name": "Moving home",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2023-02-27T16:30:14.9517747Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-02-27T16:30:14.9517747Z"
+}

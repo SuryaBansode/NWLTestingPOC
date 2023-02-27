@@ -1,0 +1,12 @@
+﻿{
+  "Id": "ICBCu_EMLkSbIYOzP3NpqA",
+  "Reference": "nV0ZN8R5dkWxcdm7JsKuMw/ICBCu_EMLkSbIYOzP3NpqA",
+  "ParentRef": "nV0ZN8R5dkWxcdm7JsKuMw/eKlIn0i5K0qx_5Zq5GG6cg",
+  "Name": "1.0.0",
+  "Type": "AppVersion",
+  "Created": "2023-02-27T16:30:14.0910787Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-02-27T16:30:14.0910787Z"
+}

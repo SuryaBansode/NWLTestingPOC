@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="_TU8RK5KtUWvTTSN4j9qQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACaSURBVDhPzZJdDYAwDIQnASk46SQgAQk4QEIlIAEpSEACrKFLLmOlI7xwyZfsp7d1XcOjiOfEpLOXIo6JQ4m62ijiLrHDATLudLdBxCuYM4vuOiIeCiPiPOWeeonzFKl43YgYv+LfnjGyIB4hyGNUF6heeYtVXaA/HPC5BvILGwRZSIzRC8R9wmukXqMNXZlIQ2E2Mpa14uYQTlE4Bz2HD15lAAAAAElFTkSuQmCC" Selector="&lt;html app='msedge.exe' title='Northumbrian Water' /&gt;" Title="Northumbrian Water" Url="https://www.nwl.co.uk/">
+      <imageRef attrName="InformativeScreenshot" originalValue="e8c744500d68de4d06f6b1ae26d5ff99.jpg" xmlns="">0udZn3eZJxEqiizCpJau9Yg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

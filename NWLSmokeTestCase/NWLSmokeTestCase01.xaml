@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="NWLSmokeTestCase01" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="680,455" sap2010:WorkflowViewState.IdRef="NWLSmokeTestCase01_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="NWLSmokeTestCase01" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="682,888" sap2010:WorkflowViewState.IdRef="NWLSmokeTestCase01_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -22,6 +22,19 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -43,14 +56,72 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NWLSmokeTestCase01" sap:VirtualizedContainerService.HintSize="400,196" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="NWLSmokeTestCase01" sap:VirtualizedContainerService.HintSize="692,823" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="loginText" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="338,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Smoke Test Case 01 - Welcome&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="630,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Welcome to Smoke Test Case - 01&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge: Northumbrian Water" sap:VirtualizedContainerService.HintSize="630,587" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0718f79c-52fd-45a5-b6d3-04cc53f4a67e" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,370" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="makePayment" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Make a payment'" sap:VirtualizedContainerService.HintSize="534,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="0718f79c-52fd-45a5-b6d3-04cc53f4a67e" TextString="[makePayment]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.nwl.co.uk/" ContentHash="o4p79Zj2DEGtz0-RLcSAYg" DesignTimeRectangle="186, 515, 126, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Make a payment'" FullSelectorArgument="&lt;webctrl aaname='Make a payment' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Make a payment' tag='SPAN' type='' class='' check:innerText='Make a payment' /&gt;" Guid="a40169e1-4998-4b87-b160-c4abf9735c07" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIIAAAAcCAYAAACtb2fOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALjSURBVGhD7Vc9cjIxDM3pcqGcJTMpuEgKSnqqPUCGGgoaOn/22pJl6a29A3whYGvmzezKa/08PTvk7e390w0MDCEMREDnQH+AzoH+AJ0D/QE6B/oDdA70B+gc6A/QeU98H91sPxNeH/gb4IevgzvFkbnTfmc/pIF6m77VWg1DCI8BzXMt7/wghODc0W3kR+87tz2nJW9DCE+A+whB3QriNgg2hPAEuFkI50sSxMVtv8Ia3Qben24FKYTNT/SxnQ/ug2IGACHkPZQDxGk1oMQpY0HQ9+ejm8Tt1rr9ZuNa8lp5GDJHoYaP/WX+5rQ/uGl+Sha4qR24ALVu+lrqQ/BuuPTWPLz8wEI4uE1qJBCQm5oMCTGhKFTEYDEoIVA8KwwRh5tVoiKk9UxiOQjzfQDFrOahOEIcqn7zHkB96x45jhCXyQX449h5Hw8S9JFnBG5xWWcN/FAMcSqVPDcEijKgfYDsUBA9ywEj8SCSGqBTAH/oBqDca/JQfTxU6jGLhQZBvKDBIB/VXB4sxa8e6FoO9b4W+EEHo0DeYvFICNlXGhCCMKjcBVsSXT51pV0nBJlHHwKyPPhyYBTDCmOtEDS/0PRcfk0IVJh+90akWQVXboTCwLpsogXQZEmq+j4A5tE90buoz9wIHjI/rYtabhVC5hMA9fF/hRB9Wy5qBWk1IaS4fJIpD8o7+3flu0CbVLunLgSq1177XJ/00Xc+Vvw9JTm4VgjoYKW9ngt+f4gQCiwJQRROyZEQuKB89WoCMkkUW5KfwWKqxDSo1cY9WyFzLlVLrDn9J6U4u1YIUHSpRv7G1Cz2PUYIAXkAs/mkhjhUEPm8Uay8L9liHRFEYjSfi0m0J2oGE9j491HECRYGwLkQ0d7kcAOuFsIMxam3oh/uoyEED8kR5EQCOl8RiMCbYG+PpwZ0viLuLYTmDfpkgM5XxN2EkP9EvsxtEACdA/0BOgf6A3QO9AfoHOgP0DnQGT7dP9zi730dVbjIAAAAAElFTkSuQmCC" InformativeScreenshot="d6174858d42aab4bf03eaef6cf7bb970.png" Reference="nV0ZN8R5dkWxcdm7JsKuMw/gDYpO9tFb0mku0Z8XMEFvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Northumbrian Water' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="534,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_3" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpressionWithOperator.FirstExpression>
+                <InArgument x:TypeArguments="x:String">[makePayment]</InArgument>
+              </uta:VerifyExpressionWithOperator.FirstExpression>
+              <uta:VerifyExpressionWithOperator.SecondExpression>
+                <InArgument x:TypeArguments="x:String">["Make a payment"]</InArgument>
+              </uta:VerifyExpressionWithOperator.SecondExpression>
+            </uta:VerifyExpressionWithOperator>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" ContentHash="_TU8RK5KtUWvTTSN4j9qQg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACaSURBVDhPzZJdDYAwDIQnASk46SQgAQk4QEIlIAEpSEACrKFLLmOlI7xwyZfsp7d1XcOjiOfEpLOXIo6JQ4m62ijiLrHDATLudLdBxCuYM4vuOiIeCiPiPOWeeonzFKl43YgYv+LfnjGyIB4hyGNUF6heeYtVXaA/HPC5BvILGwRZSIzRC8R9wmukXqMNXZlIQ2E2Mpa14uYQTlE4Bz2HD15lAAAAAElFTkSuQmCC" InformativeScreenshot="e8c744500d68de4d06f6b1ae26d5ff99.jpg" Reference="nV0ZN8R5dkWxcdm7JsKuMw/mIRvB-7IqEaHy2GCYogoQA" Selector="&lt;html app='msedge.exe' title='Northumbrian Water' /&gt;" Title="Northumbrian Water" Url="https://www.nwl.co.uk/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
