@@ -14,6 +14,7 @@
   "projectVersion": "1.0.3",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
     "isAttended": false,
     "requiresUserInteraction": true,
@@ -25,7 +26,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -41,12 +43,35 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "be9e4a08-2c58-4b0c-96a9-261a5499f5e7",
+        "testCaseType": "TestCase",
         "fileName": "NWLSmokeTestCase\\NWLSmokeTestCase01.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "f6198b75-a157-4ab3-b167-254676e1e24a",
+        "testCaseType": "TestCase",
         "fileName": "NWLSmokeTestCase\\NWLSmokeTestCase02.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a2633f80-cb7e-4faa-a4c7-e0c2dc757370",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "NWLRegressionTestSuite\\NWLRegressionTest02.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ef091f01-41bf-44d6-85cb-5c895d744e73",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "NWLRegressionTestSuite\\NWLRegressionTest01.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "34e067ad-0e80-4484-bbf7-4c59b6281116",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "NWLReusableLibrary\\NWLLoginFunction.xaml"
       }
     ],
     "modernBehavior": true
