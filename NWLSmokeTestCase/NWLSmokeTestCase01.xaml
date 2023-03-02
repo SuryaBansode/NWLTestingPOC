@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="NWLSmokeTestCase01" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="682,888" sap2010:WorkflowViewState.IdRef="NWLSmokeTestCase01_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="NWLSmokeTestCase01" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="682,890" sap2010:WorkflowViewState.IdRef="NWLSmokeTestCase01_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -78,7 +78,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="NWLSmokeTestCase01" sap:VirtualizedContainerService.HintSize="692,823" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NWLSmokeTestCase01" sap:VirtualizedContainerService.HintSize="692,825" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="loginText" />
     </Sequence.Variables>
@@ -88,13 +88,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="630,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Welcome to Smoke Test Case - 01&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge: Northumbrian Water" sap:VirtualizedContainerService.HintSize="630,587" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0718f79c-52fd-45a5-b6d3-04cc53f4a67e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge: Northumbrian Water" sap:VirtualizedContainerService.HintSize="630,589" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0718f79c-52fd-45a5-b6d3-04cc53f4a67e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,370" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,372" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="makePayment" />
             </Sequence.Variables>
@@ -113,7 +113,7 @@
                 <InArgument x:TypeArguments="x:String">[makePayment]</InArgument>
               </uta:VerifyExpressionWithOperator.FirstExpression>
               <uta:VerifyExpressionWithOperator.SecondExpression>
-                <InArgument x:TypeArguments="x:String">["Make a payment"]</InArgument>
+                <InArgument x:TypeArguments="x:String">["Make a payment today"]</InArgument>
               </uta:VerifyExpressionWithOperator.SecondExpression>
             </uta:VerifyExpressionWithOperator>
           </Sequence>
